@@ -1,0 +1,121 @@
+.todoList {
+  .todo_title {
+    color: #0b63e5;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .todo_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .submitBtn {
+      height: 2.5rem;
+      width: 4.5rem;
+      background-color: #0b63e5;
+      border: none;
+      color: #fff;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:active,
+      &:focus {
+        outline: 3px solid #0b62e56e;
+      }
+
+      &:hover {
+        background-color: #075ad5;
+      }
+    }
+  }
+
+  .text_field {
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+    outline: 1.9px solid #e6e8ec;
+    padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 500;
+
+    &::placeholder {
+      color: #e5e6e9;
+    }
+
+    &:active {
+      outline: 3px solid #0b62e56e;
+    }
+
+    &:focus {
+      outline: 3px solid #0b62e56f;
+    }
+  }
+
+  .typedText {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 320px;
+    word-wrap: break-word;
+  }
+
+  ul {
+    flex-direction: row;
+    margin-top: 2rem;
+    // margin-left: 0.7rem;
+
+    .item {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      padding: 0 0.3rem;
+
+      .operations {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      &:hover .bi-trash3, &:hover .bi-pencil-square {
+        opacity: 1;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 0.1rem solid #e5e6e9;
+      }
+
+      .bi-trash3 {
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .2s ease-in;
+
+        &:hover {
+            color: red;
+        }
+      }
+
+      .bi-pencil-square {
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .2s ease-in;
+
+        &:hover {
+            color: #075ad5;
+        }
+      }
+    }
+
+    li {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 500;
+      //   margin-top: 0.4rem;
+      padding: 0.5rem 0;
+      display: flex;
+    }
+  }
+}

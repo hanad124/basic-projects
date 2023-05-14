@@ -1,0 +1,26 @@
+.switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .lamp {
+        width: 15em;
+        height: 458px;
+        max-height: 458px !important;
+        max-width: 15rem !important;
+        margin-bottom: 3rem;
+    }
+
+    .switch {
+        width: 6rem;
+        height: 2.7rem;
+        cursor: pointer;
+        background-color: #0b63e5;
+        color: #fff;
+        border: none;
+        border-radius: .2rem;
+        font-size: 1.1rem;
+        
+    }
+}

@@ -1,0 +1,39 @@
+.textChange {
+  &_title {
+    color: #0b63e5;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .text_field {
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+    outline: 1.9px solid #e6e8ec;
+    padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 500;
+
+    &::placeholder {
+        color: #e5e6e9;
+    }
+
+    &:active {
+      outline: 3px solid #0b62e56e;
+    }
+
+    &:focus {
+      outline: 3px solid #0b62e56f;
+    }
+  }
+
+  .typedText {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 320px;
+    word-wrap: break-word;
+  }
+}
